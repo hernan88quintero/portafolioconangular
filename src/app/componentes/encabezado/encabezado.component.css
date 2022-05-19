@@ -1,0 +1,132 @@
+.barra{
+    margin: 0px;
+    padding: 10px;
+    border-end-start-radius: 12%;
+    border-end-end-radius: 12%;
+    background: #ebf3f0;
+  
+}
+
+#bars{
+    margin: 5px;
+    padding: 5px;
+}
+
+.imagenMarca{
+    border-radius: 35%;
+}
+h1{
+    color: #03363d;
+}
+
+h6{
+    color: #03363d;
+}
+
+h6:hover{
+    color: #f0f9f5;
+}
+
+div#info-company{
+    color: #174d4d;
+}
+
+div#info-contact{
+    color: #174d4d;    
+}
+
+a#contact{
+    color: #174d4d;
+    text-decoration: underline;
+}
+
+a#contact:hover{
+    color: #f0f9f5;
+}
+
+ul#info-details {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    float: right;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a#redes{
+    color:#03363d;
+}
+
+a#redes:hover{
+   color: #03363d;
+   text-decoration: underline;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
+}
+
+.botonLogin {
+    color: #03363d;
+    border-color: #03363d;
+    margin: 1px;
+}
+
+.botonLogin:hover {
+    color: #f0f9f5;
+    background-color: #03363d;
+    margin: 1px;
+}
+
+#botonIcono{
+    color: #174d4d;
+}
+
+#botonIcono:hover{
+    color: #f0f9f5;
+}
+
+
+div#info-actions{
+    margin: 10px;
+    padding: 0px;
+    width: 350px;
+    display:flex;
+    justify-content: space-around;
+}
+
+div#info-data{
+    
+    padding: 20px;
+}
+
+button{
+    margin: 15px;
+}
+
+#first-card {
+    margin-top: 5px;
+    background: url("https://picsum.photos/1500/200");
+    background-repeat: no-repeat;
+}
+
+
+img.profile {
+    margin-top: 50px;
+    margin-left: 15px;
+    clip-path: circle();
+}
+
+.btn-edit {
+    margin-top: 15px;
+    display:flex;
+    align-items: flex-end;
+}

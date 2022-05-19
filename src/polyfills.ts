@@ -1,15 +1,15 @@
 /**
- * This file includes polyfills needed by Angular and is loaded before the app.
- * You can add your own extra polyfills to this file.
+ * Este archivo incluye los polyfills que necesita Angular y se carga antes de la aplicación.
+ * Puedes añadir tus propios polyfills extra a este archivo.
  *
- * This file is divided into 2 sections:
- *   1. Browser polyfills. These are applied before loading ZoneJS and are sorted by browsers.
- *   2. Application imports. Files imported after ZoneJS that should be loaded before your main
- *      file.
+ * Este archivo está dividido en 2 secciones:
+ * 1. Browser polyfills. Se aplican antes de cargar ZoneJS y están ordenados por navegadores.
+ * 2. Importaciones de la aplicación. Archivos importados después de ZoneJS que deben ser cargados antes de su archivo principal.
+ * archivo principal.
  *
- * The current setup is for so-called "evergreen" browsers; the last versions of browsers that
- * automatically update themselves. This includes recent versions of Safari, Chrome (including
- * Opera), Edge on the desktop, and iOS and Chrome on mobile.
+ * La configuración actual es para los llamados navegadores "evergreen"; las últimas versiones de los navegadores que
+ * se actualizan automáticamente. Esto incluye las versiones recientes de Safari, Chrome (incluyendo
+ * Opera), Edge en el escritorio, y iOS y Chrome en el móvil.
  *
  * Learn more in https://angular.io/guide/browser-support
  */
@@ -19,17 +19,17 @@
  */
 
 /**
- * By default, zone.js will patch all possible macroTask and DomEvents
- * user can disable parts of macroTask/DomEvents patch by setting following flags
- * because those flags need to be set before `zone.js` being loaded, and webpack
- * will put import in the top of bundle, so user need to create a separate file
- * in this directory (for example: zone-flags.ts), and put the following flags
- * into that file, and then add the following code before importing zone.js.
- * import './zone-flags';
+ * Por defecto, zone.js parchea todas las macroTask y DomEvents posibles
+ * El usuario puede desactivar partes del parche de macroTask/DomEvents estableciendo las siguientes banderas
+ * porque esas banderas necesitan ser establecidas antes de que `zone.js` sea cargado, y webpack
+ * pondrá la importación en la parte superior del bundle, por lo que el usuario necesita crear un archivo separado
+ * en este directorio (por ejemplo: zone-flags.ts), y poner las siguientes banderas
+ * en ese archivo, y luego añadir el siguiente código antes de importar zone.js.
+ * importar './zone-flags';
  *
- * The flags allowed in zone-flags.ts are listed here.
+ * Las banderas permitidas en zone-flags.ts se enumeran aquí.
  *
- * The following flags will work for all browsers.
+ * Las siguientes banderas funcionarán para todos los navegadores.
  *
  * (window as any).__Zone_disable_requestAnimationFrame = true; // disable patch requestAnimationFrame
  * (window as any).__Zone_disable_on_property = true; // disable patch onProperty such as onclick
@@ -43,7 +43,7 @@
  */
 
 /***************************************************************************************************
- * Zone JS is required by default for Angular itself.
+ * Zone JS se requiere por defecto para el propio Angular.
  */
 import 'zone.js';  // Included with Angular CLI.
 

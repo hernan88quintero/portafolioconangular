@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+/* Puedes añadir estilos globales a este archivo, y también importar otros archivos de estilo */
+
+* {
+    margin: 0px;
+    padding: 0px;    
+}
+
+.fondoTotal{
+    background: linear-gradient(to bottom, #f8f9f9, #174d4d);
+}

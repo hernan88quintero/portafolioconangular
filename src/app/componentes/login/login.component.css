@@ -1,27 +1,30 @@
 .clase {
-    margin: 0;
-    padding: 0;
+    margin: 15% auto auto auto;
+    padding: auto;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
     font-family: Roboto;
     background-repeat: no-repeat;
-    background-size: cover;
-    background: linear-gradient(120deg, #007bff, #d0314c);
     height: 100vh;
     overflow: hidden;
 }
 
 .center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 29vw;
-    background: white;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 450px;
+    background-size: cover;
+    background: linear-gradient(120deg, #174d4d, #f0f9f5);
+    border-radius: 10%;
 }
 
 .center h1{
     text-align: center;
-    padding: 0 0 20px 0;
+    color: #f0f9f5;
+    padding: 15px 0 20px 0;
     border-radius: 1px solid silver;
 }
 
@@ -32,7 +35,7 @@
 
 form .campo-texto{
     position: relative;
-    border-bottom: 2px solid #adadad;
+    border-bottom: 2px solid #f0f9f5;
     margin: 30px 0;
 }
 
@@ -50,8 +53,8 @@ form .campo-texto{
     position: absolute;
     top: 50%;
     left: 5px;
-    color: #adadad;
-    trasnform: translateY(-50%);
+    color: #f0f9f5;
+    transform: translateY(-50%);
     font-size: 16px;
     pointer-events: none;
 }
@@ -63,14 +66,14 @@ form .campo-texto{
     left: 0;
     width: 0px;
     height: 2px;
-    background: #2691d9;
+    background: red;
     transition: .5s;
 }
 
 .campo-texto input:focus ~ label, 
 .campo-texto input:valid ~ label {
     top: -5px;
-    color: #2691d9;
+    color: #03363d;
 }
 
 .campo-texto input:focus span::before, 
@@ -80,7 +83,7 @@ form .campo-texto{
 
 .clave{
     margin: -5px 0 20px 5px;
-    color: #a6a6a6;
+    color: #f0f9f5;
     cursor: pointer;
 }
 
@@ -96,11 +99,13 @@ input[type="Submit"]{
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+    background: #f0f9f5;
+    color: #03363d;
 }
 
 input[type="Submit"]:hover{
-    background: #2691d9;
-    color: #e9f4fb;
+    background: #03363d;
+    color: #f0f9f5;
     transition: .5s;
 }
 
@@ -108,12 +113,13 @@ input[type="Submit"]:hover{
     margin: 30px 0;
     text-align: center;
     font-size: 16px;
-    color: #666666;
+    color: #03363d;
+    
 }
 
 
 .inscripcion-link a{
-    color:#2691d9;
+    color: #174d4d;
     text-decoration: none;
 }
 

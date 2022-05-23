@@ -1,3 +1,5 @@
+import { RouterModule } from '@angular/router';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,6 +9,7 @@ import { EncabezadoComponent } from './componentes/encabezado/encabezado.compone
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { MenuPrincipalComponent } from './componentes/menu-principal/menu-principal.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,17 @@ import { LoginComponent } from './componentes/login/login.component';
     EncabezadoComponent,
     AcercaDeComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    MenuPrincipalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path: 'login', component: LoginComponent},
+      {path: 'encabezado', component: EncabezadoComponent},
+      {path: '', redirectTo: '/encabezado', pathMatch: 'full'}
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

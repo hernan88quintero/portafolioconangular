@@ -1,20 +1,3 @@
-.barra{
-    margin: 0px;
-    padding: 10px;
-    border-end-start-radius: 12%;
-    border-end-end-radius: 12%;
-    background: #ebf3f0;
-  
-}
-
-#bars{
-    margin: 5px;
-    padding: 5px;
-}
-
-.imagenMarca{
-    border-radius: 35%;
-}
 h1{
     color: #03363d;
 }
@@ -32,16 +15,23 @@ div#info-company{
 }
 
 div#info-contact{
-    color: #174d4d;    
+    color: #174d4d; 
 }
 
 a#contact{
     color: #174d4d;
-    text-decoration: underline;
+    font-weight: 647;   
+    text-decoration: none;
 }
 
 a#contact:hover{
     color: #f0f9f5;
+}
+
+span#rubro{
+    color: #174d4d;
+    font-weight: 647;   
+    text-decoration: none;
 }
 
 ul#info-details {
@@ -58,32 +48,23 @@ a{
     text-decoration: none;
 }
 
-a#redes{
-    color:#03363d;
-}
-
-a#redes:hover{
-   color: #03363d;
-   text-decoration: underline;
-}
-
-.redesSociales{
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-    height: 40px;
-}
-
 .botonLogin {
     color: #03363d;
     border-color: #03363d;
     margin: 1px;
 }
 
+
 .botonLogin:hover {
-    color: #f0f9f5;
-    background-color: #03363d;
+    color: rgb(240, 249, 245);
+    background-color: rgb(3, 54, 61);
     margin: 1px;
+    box-shadow: 5px 10px 20px rgba(3,54,61)
+    
+}
+
+.botonLogin:focus {
+    box-shadow: 5px 10px 20px rgb(240, 249, 245);
 }
 
 #botonIcono{

@@ -1,0 +1,60 @@
+.barra{
+    margin: 0px;
+    padding: 10px;
+    border-end-start-radius: 12%;
+    border-end-end-radius: 12%;
+    background: #ebf3f0;
+  
+}
+
+#bars{
+    margin: 5px;
+    padding: 5px;
+}
+
+.imagenMarca{
+    border-radius: 35%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a#redes{
+    color:#03363d;
+}
+
+a.tituloMarca{
+    text-decoration: none;
+    color:#03363d; 
+}
+
+a#redes:hover{
+   color: #03363d;
+   text-decoration: underline;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
+}
+
+.botonLogin {
+    color: #03363d;
+    border-color: #03363d;
+    margin: 1px;
+}
+
+.botonLogin:hover {
+    color: rgb(240, 249, 245);
+    background-color: rgb(3, 54, 61);
+    margin: 1px;
+    box-shadow: 5px 10px 20px rgba(3,54,61)
+    
+}
+
+.botonLogin:focus {
+    box-shadow: 5px 10px 20px rgb(240, 249, 245);
+}

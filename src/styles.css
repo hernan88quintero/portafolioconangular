@@ -7,4 +7,5 @@
 
 .fondoTotal{
     background: linear-gradient(to bottom, #f8f9f9, #174d4d);
+    background-repeat: no-repeat;
 }

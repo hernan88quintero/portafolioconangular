@@ -1,0 +1,52 @@
+<div class="clase">
+
+    <div class="center">            
+        <form >
+            <h2>Registro</h2>
+
+            <div class="campo-texto">
+                <label ngfor="nombre">Nombre</label>
+                <input type="text" formControlName="nombre" required>
+            </div>
+
+            <div class="campo-texto">
+                <label ngfor="apellido">Apellido</label>
+                <input type="text" formControlName="apellido" required>                
+            </div>
+
+            <div class="campo-texto">
+                <label ngfor="apellido">Fecha de Nacimento</label>
+                <input type="date" formControlName="apellido" id="fecha" required>                
+            </div>
+
+            <div class="campo-texto">
+                <label ngfor="correo">Correo Electrónico</label>
+                <input type="email" formControlName="email" required>                
+            </div>
+
+            <div class="campo-texto">
+                <label ngfor="password">Contraseña</label>
+                <input type="password" formControlName="password" required>                
+            </div>
+
+            <div class="terminos">
+                <input type="checkbox" formControlName="terminos" id="check" required> 
+                <label ngfor="terminos"> Acepto términos y condiciones.
+            </label>                               
+            </div>  
+
+
+            <button type="submit" id="login">Registrarme</button>
+        </form>
+
+</div>
+
+
+</div>
+
+
+<!-- <div>
+<p>Prueba obtener DATOS Usuario: <strong>{{form.value.email}}</strong><p>
+<p>Prueba obtener DATOS Contraseña: <strong>{{form.value.password}}</strong></p>  
+</div> -->
+

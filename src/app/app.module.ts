@@ -15,6 +15,7 @@ import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { MenuPrincipalComponent } from './componentes/menu-principal/menu-principal.component';
+import { RegistroFormComponent } from './componentes/registro-form/registro-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MenuPrincipalComponent } from './componentes/menu-principal/menu-princi
     AcercaDeComponent,
     FooterComponent,
     LoginComponent,
-    MenuPrincipalComponent
+    MenuPrincipalComponent,
+    RegistroFormComponent
   ],
   // Acá se cargan los modulos importados que se usarán en el proyecto.
   imports: [
@@ -32,8 +34,9 @@ import { MenuPrincipalComponent } from './componentes/menu-principal/menu-princi
     ReactiveFormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: 'login', component: LoginComponent},
       {path: 'encabezado', component: EncabezadoComponent},
+      {path: 'login', component: LoginComponent},
+      {path: 'registro', component: RegistroFormComponent},
       {path: '', redirectTo: '/encabezado', pathMatch: 'full'}
     ]),
   ],

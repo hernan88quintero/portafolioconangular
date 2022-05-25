@@ -1,20 +1,41 @@
 <div class="clase">
 
         <div class="center">            
-            <form action="" method="POST">
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                 <h1>Acceso</h1>
+
                 <div class="campo-texto">
-                    <input type="email" name="email" required>
+                    <input type="email" formControlName="email">
                     <span></span>
-                    <label>Usuario</label>
+                    <label ngfor="email">Usuario</label>
                 </div>
+
+                <div *ngIf="Mail?.errors  && Mail?.touched">    
+                    <p *ngIf="Mail?.hasError('required')" class="error">
+                        El email es requerido.
+                    </p>
+                    <p *ngIf="Mail?.hasError('email')" class="error">
+                        El formato del email debe ser válido.
+                      </p>
+                </div>
+
                 <div class="campo-texto">
-                    <input type="pasword" name="password" required>
+                    <input type="password" formControlName="password">
                     <span></span>
-                    <label>Contraseña</label>
+                    <label ngfor="password">Contraseña</label>
                 </div>
+
+                <div *ngIf="Password?.errors && Password?.touched">
+                    <p *ngIf="Password?.hasError('required')" class="error">
+                      El password es requerido.
+                    </p>
+                    <p *ngIf="Password?.errors?.['minlength']" class="error">
+                      El password debe ser de 8 o más caracteres.
+                    </p>
+                </div>
+
                 <div class="clave">¿Olvidó su contraseña?</div>
-                <input type="Submit" name="submit" value="Login">
+                <button type="submit" id="login">Login</button>
                 <div class="inscripcion-link">
                     ¿Aún no es miembro? <a href="">Click aquí</a>
                 </div>
@@ -23,5 +44,11 @@
     </div>
 
 
+</div>
+
+
+<div>
+    <p>Prueba obtener DATOS Usuario: <strong>{{form.value.email}}</strong><p>
+    <p>Prueba obtener DATOS Contraseña: <strong>{{form.value.password}}</strong></p>  
 </div>
 

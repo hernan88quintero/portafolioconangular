@@ -80,12 +80,6 @@ form .campo-texto{
     transition: .5s;
 }
 
-.campo-texto input:focus ~ label, 
-.campo-texto input:valid ~ label {
-    top: -5px;
-    color: #03363d;
-}
-
 .campo-texto input:focus span::before, 
 .campo-texto input:valid span::before {
    width: 100%;

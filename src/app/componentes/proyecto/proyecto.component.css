@@ -5,6 +5,16 @@
     border-radius: 1%;
 }
 
+h3{
+    color: #174d4d;
+}
+
+h4{
+    color: #174d4d;
+    margin: 5px 10px 5px 15px;
+    padding: 5px 10px 5px 15px;
+}
+
 #imagen-proyecto{
     border-radius: 40%;
 }
@@ -15,14 +25,20 @@ a#contacto{
     text-decoration: none;
 }
 
-a#contact:hover{
+a#contacto:hover{
     color: #bcddce;
 }
 
-#botonIco{
+#botonIcon{
     color: #174d4d;
 }
 
 #botonIcon:hover{
     color: #bcddce;
+}
+
+p{
+    color: #174d4d;
+    margin: 5px 10px 5px 0px;
+    padding: 5px 10px 5px 0px;
 }

@@ -50,3 +50,7 @@ img{
 #botonIcono{
     color: #174d4d;
 }
+
+#botonIcono:hover{
+    color: #bcddce;
+}

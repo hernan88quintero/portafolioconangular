@@ -1,52 +1,130 @@
 <div class="clase">
 
     <div class="center">            
-        <form >
+        <form [formGroup]="formulario" (ngSubmit)="funcionOnEnviar($event)">
             <h2>Registro</h2>
+
+            <!-- Input -->
 
             <div class="campo-texto">
                 <label ngfor="nombre">Nombre</label>
-                <input type="text" formControlName="nombre" required>
+                <input type="text" formControlName="nombre">
             </div>
+
+            <!-- Validaciones -->
+
+            <div *ngIf="ObtenerNombre?.errors && ObtenerNombre?.touched">
+                <p *ngIf="ObtenerNombre?.hasError('required')" class="error">
+                  El nombre es requerido.
+                </p>
+                <p *ngIf="ObtenerNombre?.errors?.['minlength']" class="error">
+                  El nombre debe ser de 2 o más caracteres.
+                </p>
+            </div>
+
+            <!-- Input -->
 
             <div class="campo-texto">
                 <label ngfor="apellido">Apellido</label>
-                <input type="text" formControlName="apellido" required>                
+                <input type="text" formControlName="apellido">                
             </div>
+
+            <!-- Validaciones -->
+
+            <div *ngIf="ObtenerApellido?.errors && ObtenerApellido?.touched">
+                <p *ngIf="ObtenerApellido?.hasError('required')" class="error">
+                  El apellido es requerido.
+                </p>
+                <p *ngIf="ObtenerApellido?.errors?.['minlength']" class="error">
+                  El apellido debe ser de 3 o más caracteres.
+                </p>
+            </div>
+
+            <!-- Input -->
 
             <div class="campo-texto">
                 <label ngfor="apellido">Fecha de Nacimento</label>
-                <input type="date" formControlName="apellido" id="fecha" required>                
+                <input type="date" formControlName="fecha">                
             </div>
+
+            <!-- Validaciones -->
+
+            <div *ngIf="ObtenerFecha?.errors && ObtenerFecha?.touched">
+                <p *ngIf="ObtenerFecha?.hasError('required')" class="error">
+                  El fecha es requerida.
+                </p>
+            </div>
+
+            <!-- Input -->
 
             <div class="campo-texto">
                 <label ngfor="correo">Correo Electrónico</label>
-                <input type="email" formControlName="email" required>                
+                <input type="email" formControlName="correo">                
             </div>
+
+            <!-- Validaciones -->
+
+            <div *ngIf="ObtenerCorreo?.errors && ObtenerCorreo?.touched">
+                <p *ngIf="ObtenerCorreo?.hasError('required')" class="error">
+                  El correo es requerido.
+                </p>
+                <p *ngIf="ObtenerCorreo?.errors?.['email']" class="error">
+                  Escriba un correo válido
+                </p>
+            </div>
+
+            <!-- Input -->
 
             <div class="campo-texto">
                 <label ngfor="password">Contraseña</label>
-                <input type="password" formControlName="password" required>                
+                <input type="password" formControlName="clave">                
             </div>
 
+            <!-- Validaciones -->
+
+            <div *ngIf="ObtenerClave?.errors && ObtenerClave?.touched">
+                <p *ngIf="ObtenerClave?.hasError('required')" class="error">
+                  El password es requerido.
+                </p>
+                <p *ngIf="ObtenerClave?.errors?.['minlength']" class="error">
+                  El password debe ser de 4 o más caracteres.
+                </p>
+            </div>
+
+            <!-- Input -->
+
             <div class="terminos">
-                <input type="checkbox" formControlName="terminos" id="check" required> 
+                <input type="checkbox" formControlName="terminos"> 
                 <label ngfor="terminos"> Acepto términos y condiciones.
             </label>                               
-            </div>  
+            </div>
+
+            <!-- Validaciones -->
+
+            <div *ngIf="ObtenerTerminos?.errors && ObtenerTerminos?.touched">
+                <p *ngIf="ObtenerTerminos?.hasError('required')" class="error">
+                  Acepte los Términos y Condiciones.
+                </p>
+                <p *ngIf="ObtenerNombre?.errors?.['requiredTrue']" class="error">
+                  El nombre debe ser de 2 o más caracteres.
+                </p>
+            </div>
 
 
             <button type="submit" id="login">Registrarme</button>
         </form>
 
+    </div>
+
 </div>
 
 
+<div>
+    <p>Prueba obtener DATOS Usuario: <strong>{{formulario.value.nombre}}</strong><p>
+    <p>Prueba obtener DATOS Contraseña: <strong>{{formulario.value.apellido}}</strong></p>  
+    <p>Prueba obtener DATOS Usuario: <strong>{{formulario.value.fecha}}</strong><p>
+    <p>Prueba obtener DATOS Contraseña: <strong>{{formulario.value.correo}}</strong></p>
+    <p>Prueba obtener DATOS Usuario: <strong>{{formulario.value.clave}}</strong><p>
+    <p>Prueba obtener DATOS Contraseña: <strong>{{formulario.value.terminos}}</strong></p>  
 </div>
-
-
-<!-- <div>
-<p>Prueba obtener DATOS Usuario: <strong>{{form.value.email}}</strong><p>
-<p>Prueba obtener DATOS Contraseña: <strong>{{form.value.password}}</strong></p>  
-</div> -->
 

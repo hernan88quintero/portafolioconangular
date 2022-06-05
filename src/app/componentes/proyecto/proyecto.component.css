@@ -1,0 +1,28 @@
+.body-proyecto{
+    background-color: #f0f9f5;
+    margin: 5px 10px 5px 20px;
+    padding: 50px;
+    border-radius: 1%;
+}
+
+#imagen-proyecto{
+    border-radius: 40%;
+}
+
+a#contacto{
+    color: #174d4d;
+    font-weight: 647;   
+    text-decoration: none;
+}
+
+a#contact:hover{
+    color: #bcddce;
+}
+
+#botonIco{
+    color: #174d4d;
+}
+
+#botonIcon:hover{
+    color: #bcddce;
+}

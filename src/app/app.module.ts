@@ -16,6 +16,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { MenuPrincipalComponent } from './componentes/menu-principal/menu-principal.component';
 import { RegistroFormComponent } from './componentes/registro-form/registro-form.component';
+import { ProgressComponent } from './componentes/progress/progress.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RegistroFormComponent } from './componentes/registro-form/registro-form
     FooterComponent,
     LoginComponent,
     MenuPrincipalComponent,
-    RegistroFormComponent
+    RegistroFormComponent,
+    ProgressComponent
   ],
   // Acá se cargan los modulos importados que se usarán en el proyecto.
   imports: [

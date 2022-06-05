@@ -2,6 +2,11 @@ h1{
     color: #03363d;
 }
 
+h2{
+    color: #f0f9f5;
+    margin: 20px 10px 10px 10px;
+}
+
 h6{
     color: #03363d;
 }
@@ -59,7 +64,7 @@ a{
     color: rgb(240, 249, 245);
     background-color: rgb(3, 54, 61);
     margin: 1px;
-    box-shadow: 5px 10px 20px rgba(3,54,61)
+    box-shadow: 5px 10px 20px rgba(3,54,61);
     
 }
 
@@ -110,4 +115,20 @@ img.profile {
     margin-top: 15px;
     display:flex;
     align-items: flex-end;
+}
+
+/* CSS ACERCA */
+div#progress {
+    display: flex;
+    justify-content: center;
+    }
+
+
+
+/* CSS PROGRESS */
+
+div#progress {
+display: flex;
+justify-content: space-around;
+justify-items: space-around;
 }

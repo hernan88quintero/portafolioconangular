@@ -17,7 +17,13 @@ import { LoginComponent } from './componentes/login/login.component';
 import { MenuPrincipalComponent } from './componentes/menu-principal/menu-principal.component';
 import { RegistroFormComponent } from './componentes/registro-form/registro-form.component';
 import { ProgressComponent } from './componentes/progress/progress.component';
-import { ProyectoComponent } from './componentes/proyecto/proyecto.component'
+import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
+
+// Importación del SERVICIO
+import { ServiceService } from './service/service.service';
+
+//Importación del CLIENTE HTTPS
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,8 +49,9 @@ import { ProyectoComponent } from './componentes/proyecto/proyecto.component'
       {path: 'registro', component: RegistroFormComponent},
       {path: '', redirectTo: '/encabezado', pathMatch: 'full'}
     ]),
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

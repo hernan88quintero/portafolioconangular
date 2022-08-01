@@ -1,4 +1,4 @@
-    <div class="card mat-card" id="first-card">
+    <div  class="card mat-card" id="first-card">
 
         <div id="profile-background"> 
             
@@ -9,13 +9,16 @@
             </div>           
         
 
-            <div id="info-data">
+            <div *ngFor="let cliente of nuevoCliente" id="info-data">
 
                 <div>
-                    <h1>Hernan Quintero <a href="#" id="botonIcono"><i class="fa-solid fa-pencil" width="15px" height="15px"></i></a></h1>
+                    <h1>{{cliente.nombre}} {{cliente.apellido}} {{cliente.id}}</h1>
 
                     <div id="info-company">
-                        <p>Desarrollador Web <span id="rubro">Front-End</span></p>
+                        <p>nacimiento {{cliente.fecha}} <span id="rubro"></span></p>
+                        <p>correo <span id="rubro">{{cliente.correo}}</span></p>
+                        <p>clave {{cliente.clave}} <span id="rubro"></span></p>
+                        <p>términos<span id="rubro"> {{cliente.terminos}} </span></p>
                     </div>
 
                     <div id="info-contact">
